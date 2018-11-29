@@ -52,7 +52,7 @@ public class Main {
     return "hello";
   }
   
-  //8b
+  //8c
   @RequestMapping("/hello7")
   String hello7(Map<String, Object> model) {
       RelativisticModel.select();
