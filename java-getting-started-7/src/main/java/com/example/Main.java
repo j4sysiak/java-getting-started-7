@@ -52,9 +52,9 @@ public class Main {
     return "hello";
   }
   
-  //5222
-  @RequestMapping("/hello5")
-  String hello5(Map<String, Object> model) {
+  //2
+  @RequestMapping("/hello7")
+  String hello7(Map<String, Object> model) {
       RelativisticModel.select();
       String energy = System.getenv().get("ENERGY");
       if (energy == null) {
@@ -62,7 +62,7 @@ public class Main {
       }
       Amount<Mass> m = Amount.valueOf(energy).to(KILOGRAM);
       model.put("science", "E=mc^2: " + energy + " = "  + m.toString());
-      return "hello5";
+      return "hello7";
   }
 
   @RequestMapping("/db")
